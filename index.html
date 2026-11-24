@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AttendPro - Absensi Karyawan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="login-page">
+    <section class="login-card">
+      <div class="brand-icon">A</div>
+
+      <h1>AttendPro</h1>
+      <p class="subtitle">Employee Attendance System</p>
+
+      <form id="loginForm">
+        <label>Masuk sebagai</label>
+        <select id="role" required>
+          <option value="karyawan">Karyawan</option>
+          <option value="admin">Admin / HR</option>
+        </select>
+
+        <label>Email</label>
+        <input type="email" id="email"
+          placeholder="Masukkan email" required>
+
+        <label>Password</label>
+        <input type="password" id="password"
+          placeholder="Masukkan password" required>
+
+        <button type="submit">Masuk Sekarang</button>
+        <p id="pesan"></p>
+      </form>
+
+      <footer>© 2026 AttendPro Attendance System</footer>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
